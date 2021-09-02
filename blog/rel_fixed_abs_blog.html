@@ -3,12 +3,13 @@
   <head>
     <title>The Blog of Dylan Curtis-Reeve</title>
     <link rel="stylesheet" href="../styles/main.css" type="text/css">
+    <link rel="stylesheet" href="../styles/blog.css" type="text/css">
   </head>
   <body>
     <div class="container">
       <header>
             <div>
-                <a href="../index.html"> <img src="Assets/Site Icon.png" alt="Teardrop Logo" id="logoImage"></a>
+                <a href="../index.html"> <img src="../Assets/Site Icon.png" alt="Teardrop Logo" id="logoImage"></a>
             </div>
             <div id="headerLinkElements">
               <div>
@@ -24,19 +25,33 @@
         
       </header>
       <div id="primaryContentBox">
-          <div id="BlogOSphere">
-            <h2>Blog</h2>
-          </div>
+        <h1>The Difference Between CSS Position Values</h1>
+        <h2>What's the Point of the Position Property?</h2>
+        <div id="blogArticleContent">
+          <p>Have you every scrolled down a page and been glad that the navigation bar at the top stays where it is (hint: try scrolling now)?
+            If you have then you can thank the good folk who created the CSS position property. The property helps web designers make sites feel more intuitive and put things where they make the most sense.
+          Property can be used in a few different flavours and this blog post will focus on three of them: </p>
+          <ul>
+            <li>Absolute</li>
+            <li>Relative</li>
+            <li>Fixed</li>
+          </ul>
+          
+          <h3>Absolute</h3>
+          <p>If there is content that you want to appear at a <em>very</em> specific location absolute is the way to go. You'll still be able to scroll by. But if you need to make sure that your image is exactly 3 centimeters away from the edge. Absolute is the way to go. It's important to note that unlike some of the other property values absolute takes whatever its assigned out of the normal 'flow' of a website. Kind of like the kid of a CEO might get plucked out of the normal 'graduate' rotations to go to a specific role.<br>
+          <br>
+          You can use properties such as left, right, top, and bottom to place where the content needs to go. However, one thing that's important to know when using the absolute value is that it gets positioned based on the content surrounding it. Take the idea of swimming in a pool. You can be hold to swim to the top or the bottom. But to won't swim 2 meters above or below the pool (at least not without some additional tools!). With the absolute value your content will be within those same limits unless you give it special instructions.</p>
+          <h3>Relative</h3>
+          <p>While the absolute value takes your content 'outside' of the normal flow, relative bases where the content will go <em>on</em> the flow. Or specifically the content's base starting position. You can also adjust where a relative piece of content goes with the top, bottom, left & right</p>
+          <h3>Fixed</h3>
+          <p>Unlike the absolute & relative values fixed does not care where you scroll the content will remain exactly at that location on the screen. In the preamble of this blog the example was given of the navigation bar not moving. There's a very good chance you're experiencing that thanks to the fixed value.</p>
+          <h3>Extra for Techxperts</h3>
+          <p>By setting the top, bottom, left, or right values to 0 the element will be put to that location. i.e. top = 0; puts an element with property: absolute; to the top of its parent element. But this doesn't work for the relative value.</p>
+        </div>
+        
 
-          <div id="ProjectOSphere">
-            <h2>Projects</h2>
-          </div>
 
-          <div id="AboutOSphere">
-            <h2>About</h2>
-          </div>
       </div>
-
       <footer>
         <div>word</div>
       </footer>

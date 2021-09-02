@@ -1,0 +1,15 @@
+h1 {
+    color: hsl(297, 41%, 55%);
+    width: 60%;
+
+}
+/* get content aligned left --> */
+#blogArticleContent{
+
+    width: 60%;
+    text-align: start;
+    
+    
+    
+
+}
