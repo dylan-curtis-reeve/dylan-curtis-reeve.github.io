@@ -1,20 +1,81 @@
+/*This is to remove the margin which was appearing aroudn the outside of the website.*/
+
+html, body { width:100%; height:100%; margin: 0; padding:0; }
+
+.container {
+
+    display: table;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
 header {
+    top: 0;
     display: flex;
     justify-content: space-between;
-    background-color: hsl(0, 100%, 90%);
-    height: 10%;
+    background: linear-gradient(5deg, hsl(305, 56%, 87%), hsl(297, 41%, 55%)); 
+    max-height: 100px;
+    width: 100%;
+    box-shadow: 3px 0px 8px #888888;
+    z-index: 1;
+    position: relative;
 }
 
 #logoImage{
+    max-height: 90px;
+    max-width: 90px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border: 5px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px #888888;
+    z-index: 1;
+    position: relative;
+}
+
+#hiddenLogoImage{
     max-height: 100px;
     max-width: 100px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border: 5px;
     border-radius: 50%;
+    opacity: 0;
+    box-shadow: 1px 1px 8px #888888;
+    z-index: 1;
+    position: relative;
 
 }
 
 #headerLinkElements{
     display: flex;
+    margin-left: 10px;
     justify-content: space-evenly;
     width: 100%;
 
+}
+
+
+
+
+#primaryContentBox{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    align-items: center;
+    top: 10%;
+    bottom: 10%;
+    width: 100%;
+
+}
+
+footer {
+    max-height: 100px;
+    background-color: hsl(0, 100%, 90%);
+    display: flex;
+    bottom: 0;
+    width: 100%;
 }
