@@ -20,7 +20,7 @@ header {
     width: 100%;
     box-shadow: 3px 0px 8px #888888;
     z-index: 1;
-    position: relative;
+    position: fixed;
 }
 
 #logoImage{
@@ -58,9 +58,6 @@ header {
 
 }
 
-
-
-
 #primaryContentBox{
     display: flex;
     justify-content: space-evenly;
@@ -70,13 +67,50 @@ header {
     top: 10%;
     bottom: 10%;
     width: 100%;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 10%;
+
+}
+
+.contentSectionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border-radius: 5px;
+    background: linear-gradient(0deg, white, hsl(297, 41%, 55%)); 
+    box-shadow: 1px 1px 8px #888888;;
+    color: white;
+    width: 40%;
+    padding-bottom: 10px;
+}
+
+.contentBoxHeading {
+    text-align: center;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+a.boxContentLink {
+    color: black;
+
+}
+
+a:visited boxContentLink {
+    color: black;
 
 }
 
 footer {
-    max-height: 100px;
+    height: 30%;
     background-color: hsl(0, 100%, 90%);
     display: flex;
     bottom: 0;
     width: 100%;
+    position: relative;
 }
