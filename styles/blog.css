@@ -5,13 +5,20 @@ h1 {
 }
 /* get content aligned left --> */
 #blogArticleContent{
-
+    position: relative;
     width: 60%;
     text-align: start;
 
 }
+
+footer{
+    position: relative;
+}
 @media (max-width: 800px){
     #blogArticleContent{
         width: 95%;
+    }
+    h1 {
+        width: 100%;
     }
 }
