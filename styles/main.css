@@ -7,8 +7,6 @@ html, body { width:100%; height:100%; margin: 0; padding:0; }
     display: table;
     width: 100%;
     height: 100%;
-    
-
 }
 
 header {
@@ -16,18 +14,23 @@ header {
     display: flex;
     justify-content: space-between;
     background: linear-gradient(5deg, hsl(305, 56%, 87%), hsl(297, 41%, 55%)); 
+    height: 10%;
     max-height: 100px;
+    min-height: 20px;
     width: 100%;
     box-shadow: 3px 0px 8px #888888;
     z-index: 1;
     position: fixed;
+    
 }
 
 #logoImage{
+    height:90%;
+    
     max-height: 90px;
     max-width: 90px;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: 5%;
+    margin-left: 5%;
     border: 5px;
     border-radius: 50%;
     box-shadow: 1px 1px 8px #888888;
@@ -68,10 +71,9 @@ header {
     bottom: 10%;
     width: 100%;
     position: relative;
-    margin-top: 5%;
+    margin-top: 10%;
     padding-bottom: 10%;
     text-align: center;
-    
 }
 
 .contentSectionContainer{
@@ -107,6 +109,8 @@ a:visited boxContentLink {
 
 }
 
+
+
 footer {
     height: 10%;
     background: linear-gradient(0deg, white, hsl(0, 100%, 90%)); 
@@ -115,4 +119,5 @@ footer {
     width: 100%;
     position: relative;
     padding: 0px, 10px;
+    
 }
