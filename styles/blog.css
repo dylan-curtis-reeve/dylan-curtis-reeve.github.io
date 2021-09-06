@@ -1,6 +1,8 @@
 h1 {
     color: hsl(297, 41%, 55%);
-    width: 60%;
+    width: 100%;
+    text-align: center;
+    
 
 }
 /* get content aligned left --> */

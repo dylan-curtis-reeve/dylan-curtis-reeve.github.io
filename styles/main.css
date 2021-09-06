@@ -67,7 +67,6 @@ header {
     flex-direction: column;
     background-color: hsl(0, 0%, 100%);
     align-items: center;
-    
     width: 100%;
     position: relative;
     margin-top: 10%;
@@ -109,7 +108,7 @@ header {
     
 }
 
-a {
+a.contentSectionContainer #headerLinkElements {
     color: white;
     text-decoration: none;
 
