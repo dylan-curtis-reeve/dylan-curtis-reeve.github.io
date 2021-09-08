@@ -1,0 +1,34 @@
+.flexyContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 1%;
+}
+
+.containerBit {
+    width: 100%;
+}
+
+.first {
+    text-align: left;
+    
+}
+
+.last {
+    text-align: right;
+}
+
+hr{
+    height: 1px;
+    color: grey;
+    width: 30%;
+    background-color: grey;
+}
+
+code {
+    background-color: hsl(0, 0%, 86%);
+}
+
+.containerBit li{
+    list-style: none;
+}
