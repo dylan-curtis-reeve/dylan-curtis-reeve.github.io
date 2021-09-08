@@ -2,10 +2,30 @@ html, body {
     margin: 0;
 }
 
-.container{
+body {
+    font-family: sans-serif;
+}
 
+
+.container{
+    width: 100%;
+    display: table;
+    background-color: bisque;
 }
 
 .content{
 
+}
+nav{
+    background-color: aqua;
+    display: table-caption;
+    caption-side: bottom;
+}
+
+.container ul li a{
+    text-decoration: none;
+}
+
+.container ul li a:hover{
+    color: hsl(308, 79%, 54%);
 }
