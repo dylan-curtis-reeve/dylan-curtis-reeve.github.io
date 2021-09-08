@@ -35,7 +35,7 @@
         
           <p>Have you every scrolled down a page and been glad that the navigation bar at the top stays where it is (hint: try scrolling now)?
             If you have then you can thank the good folk who created the CSS position property. The property helps web designers make sites feel more intuitive and put things where they make the most sense.
-          Property can be used in a few different flavours and this blog post will focus on three of them: </p>
+          The position property can be used in a few different flavours and this blog post will focus on three of them: </p>
           <ul>
             <li>Absolute</li>
             <li>Relative</li>
@@ -43,11 +43,53 @@
           </ul>
           
           <h3>Absolute</h3>
-          <p>If there is content that you want to appear at a <em>very</em> specific location absolute is the way to go. You'll still be able to scroll by. But if you need to make sure that your image is exactly 3 centimeters away from the edge. Absolute is the way to go. It's important to note that unlike some of the other property values absolute takes whatever its assigned out of the normal 'flow' of a website. Kind of like the kid of a CEO might get plucked out of the normal 'graduate' rotations to go to a specific role.<br>
+          <p>If there is content that you want to appear at a <em>very</em> specific location absolute is the way to go. You'll still be able to scroll by. It's important to note that unlike some of the other property values absolute takes whatever its assigned out of the normal 'flow' of a website. Kind of like the kid of a CEO might get plucked out of the normal 'graduate' rotations to go to a specific role.<br>
           <br>
-          You can use properties such as left, right, top, and bottom to place where the content needs to go. However, one thing that's important to know when using the absolute value is that it gets positioned based on the content surrounding it. Take the idea of swimming in a pool. You can be hold to swim to the top or the bottom. But to won't swim 2 meters above or below the pool (at least not without some additional tools!). With the absolute value your content will be within those same limits unless you give it special instructions.</p>
+          You can use properties such as left, right, top, and bottom to place where the content needs to go. However, one thing that's important to know when using the absolute value is that it gets positioned based on the content surrounding it. </p>
+          <p>For example:</p>
+          <code>
+            &lt;div class="exampleContainerBox"&gt;<br>
+            &lt;div class="staticBox"&gt;One&lt;/div&gt;<br>
+            &lt;div class="absoluteExample"&gt;Two&lt;/div&gt;<br>
+            &lt;div class="staticBox"&gt;Three&lt;/div&gt;<br>
+            &lt;div class="staticBox"&gt;Four&lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+
+        </code>
+
+        <p>Displays as:</p>
+          
+          <div class="exampleContainerBox">
+            <div class="staticBox">One</div>
+            <div class="absoluteExample">
+              Two
+            </div>
+            <div class="staticBox">Three</div>
+            <div class="staticBox">Four</div>
+          </div>
           <h3>Relative</h3>
-          <p>While the absolute value takes your content 'outside' of the normal flow, relative bases where the content will go <em>on</em> the flow. Or specifically the content's base starting position. Like absolute you can also adjust where a relative piece of content goes with the top, bottom, left & right.</p>
+          <p>While the absolute value takes your content 'outside' of the normal flow, relative bases where the content will go <em>on</em> the flow. Or specifically the content's base starting position. The content surrounding a relative element will leave space where the relative element once was if its position has been changed. Like absolute you can also adjust where a relative piece of content goes with the top, bottom, left & right.</p>
+          <p>For Example</p>
+          <code>
+            &lt;div class="exampleContainerBox"&gt;<br>
+            &lt;div class="staticBox"&gt;One&lt;/div&gt;<br>
+            &lt;div class="relativeBox"&gt;Two&lt;/div&gt;<br>
+            &lt;div class="staticBox"&gt;Three&lt;/div&gt;<br>
+            &lt;div class="staticBox"&gt;Four&lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+
+        </code>
+
+        <p>Displays as:</p>
+            
+          <div class="exampleContainerBox">
+            <div class="staticBox">One</div>
+            <div class="relativeBox">Two</div>            
+            <div class="staticBox">Three</div>
+            <div class="staticBox">Four</div>
+
+
+          </div>          
           <h3>Fixed</h3>
           <p>Unlike the absolute & relative values fixed does not care where you scroll the content will remain exactly at that location on the screen. In the preamble of this blog the example was given of the navigation bar not moving. There's a very good chance you're experiencing that thanks to the fixed value.</p>
           <h3>Extra for Techxperts</h3>
