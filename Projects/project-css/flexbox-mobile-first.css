@@ -1,0 +1,107 @@
+html, body{
+    margin: 0;
+}
+
+.flexboxContainer{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sideBar{
+    background-color: indianred;
+
+}
+
+.sideBar ul{
+    margin: 0;
+    list-style: none;
+}
+
+.menu{
+    background-color: indigo;
+    padding: 1% 0 1% 0;
+}
+
+.menu ul{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+    list-style: none;
+}
+
+.menu ul a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul a::after{
+    color: white;
+}
+
+.menu ul a:hover{
+    color: #f5f5db;
+}
+
+.content{
+    background-color: blueviolet;
+    color: black;
+    padding: 0;
+    order: -1;
+}
+
+.content p{
+    margin: 0;
+    padding: 1% 0 1% 0;
+}
+
+h1{
+    margin: 0;
+    padding: 1% 0 1% 0;
+}
+
+@media (min-width: 600px){
+
+    .flexboxContainer{
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .desktopContainer{
+    
+        flex-flow: row wrap;
+        
+    }
+    
+    .sideBar{
+        background-color: indianred;
+    
+    }
+    
+    .sideBar ul{
+        margin: 0;
+        list-style: none;
+    }
+    
+    .menu{
+        background-color: indigo;
+        padding: 1% 0 1% 0;
+    }
+    
+    .menu ul{
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0;
+        list-style: none;
+    }
+    
+    .content{
+        order: 0;
+    }
+
+}
