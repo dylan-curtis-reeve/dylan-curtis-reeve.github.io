@@ -2,6 +2,38 @@ html, body{
     margin: 0;
 }
 
+a {
+    color: lightpink;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a::after{
+    color: lightpink;
+}
+
+.imageContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+img {
+    
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    box-shadow: #f5f5db 5px 5px;
+}
+
+.blogImage {
+    border-radius: 0%;
+    box-shadow: none;
+}
+
 .flexboxContainer{
     display: flex;
     flex-flow: row wrap;
