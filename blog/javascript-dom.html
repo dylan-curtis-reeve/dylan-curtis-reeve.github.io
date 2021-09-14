@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../Projects/project-css/flexbox-mobile-first.css">
+        <title>JS Non-Technical Discussion</title>
+    </head>
+    <body>
+        <div class="flexboxContainer">
+            <nav class="menu">
+                <ul>
+                    <li><a href="../blog/blog_index.html">Blog</a></li>
+                    <li><a href="../Projects/pindex.html">Projects</a></li>
+                    <li><a>About</a></li>
+                </ul>
+            </nav>
+            <!--<div class="desktopContainer">-->
+                
+                <div class="sideBar">
+                    <p><a href="../blog/blog_index.html" >Blogs</a></p>
+                    <ul>
+                        <li><a href="../blog/identity-values.html">Identity & Values</a></li>
+                        <li><a href="../blog/learning-plan.html">Learning Plan</a></li>
+                        <li><a href="../blog/rel_fixed_abs_blog.html">Rel, Abs, Fixed Position</a></li>
+                        </ul>
+                        <p><a href="../Projects/pindex.html">Projects</a></p>
+                        <ul>
+                        <li><a href="../Projects/grid-mobile-first.html">Grid Mobile First</a></li>
+                        <li><a href="../Projects/flexbox-mobile-first.html">Felxbox Mobile First</a></li>
+                        <li><a href="../Projects/mobile-first.html">Mobile First</a></li>
+                        <li><a href="../Projects/web-frameworks.html">Framework Index</a></li>
+                        <p>
+                            General Programming
+                        </p>
+                        <li><a href="https://www.iamtimcorey.com/courses">Tim Corey .NET</a></li>
+                        <li><a>Filling</a></li>
+                        <li><a>Up</a></li>
+                        </ul>
+                        <p>
+                        Space
+                        </p>
+                        <ul>
+                        <li><a>With</a></li>
+                        <li><a>Extra</a></li>
+                        <li><a>Words</a></li>
+                        </ul>
+                </div>
+                <div class="content">
+                    <h1>A Non-Technical Discussion of Programming Concepts</h1>
+                    <h2>Analogy of HTML & CSS</h2>
+                    <p>
+                        If you were to design your dream home HTML would be the schematics. The structure, how many rooms, & where the windows are. It would also 
+                        be an itemised list of the content in the house. 3 couches, 2 beds, Washing machine, and a pizza oven. CSS on the otherhand would be the choices
+                         you make around <em>how</em> things look in the house. What colour are the walls, where do you want to put the 3 couches, is the washing machine 
+                         going in the bathroom or the middle of the lounge?
+                    </p>
+                    <h2>Control Flow & Loops</h2>
+                    <p>
+                        You can imagine control flow and loops like the road rules. When you pull out of the car park and about to enter the road you enter a loop.
+                        
+                    </p>
+                    <ul>
+                        <code> While road isn't clear keep on checking both ways. Once road is clear turn left</code> (or right depending on your direction).
+                    </ul>
+                    <p>
+                        Once you've travelled for a while you then get to a stop light. Based on the colour of the stop light you will alter your behaviour. 
+                    </p>
+                    <ul>
+                        <code>If the light is red stop your car. Otherwise if the light is orange evaluate if you can stop in time or continue through if safer. In all other situations continue through the stop light.</code>
+                    </ul>
+                    <p>
+                        In programming the stoplight would be like a conditional statement where you change your behaviour depending on different inputs. And there are multiple scenarios to account for.
+                    </p>
+                    <h2>What is the DOM and how you might interact with it</h2>
+                    <p>
+                        The Document Object Model (DOM) is a way for other programming languages to interact with your webpage. It provides a lot of features (or methods) for selecting parts of an HTML document and changing them based on certain criteria.
+                        The 'document' part of DOM refers to your webpage (the document). Object is a technical jargon word which signifies that this 'interface' has a bunch of properties which you can access.
+                        It's through these properties specifically that you can interact with your webpage. Model refers to the fact the document 'object' 'models' all of the components that make up a web page. 
+                        This model can be visualised through a tree diagram.
+                     </p>
+                     <iframe src="../Assets/dom-model-wikipedia.svg" width="445" height="445" border-style="none">
+                         <img src="../Assets/dom-model-wikipedia.svg"alt="Wikipedia DOM svg file" />
+                     </iframe>
+                     <p>By ‍Birger Eriksson - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=18034500">Link</a></p>
+                     <h2>Accessing Data From Arrays v Objects</h2>
+                     <p>
+                         The most helpful concept in distinguishing the two is that an array holds it contents in a numbered list. Now the order doesn't have to actually mean anything. But if you were to store "orange" it would be at location "x" say 3.
+                         An object on the other hand holds its content associated with a keyword. So the content of "orange" might be stored under the key "favourite_food". Which is great is you know what the keywords in an object are. But requries more work to extract content if you don't.
+                         Whereas an array is great if you don't care about what something is stored 'against' as long as it's stored. And you know what the value is which you want to retrieve.
+                     </p>
+                     <h2>What are Functions and Why are they Useful?</h2>
+                     <p>
+                         Functions are a set of instructions which have been given a name and can be accessed again and again without the programmer needing to repeat everything that goes into them each time. This is helpful as it lets you summarise 'functionality' into a name and helps to make code more readable. Not to mention save space.
+                         They can contain pretty much anything which has been discussed in this blog post to this point. And they can even contain other functions! If you've ever worked in a job with a set of operating instructions for different tasks you can think of a function as a particular task's instructions.
+                     </p>
+
+            <!--</div>-->
+                </div>
+    </body>
+</html>
