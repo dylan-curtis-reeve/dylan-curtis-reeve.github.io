@@ -24,18 +24,18 @@
 .moveCirc{
     animation-name: upAndDowny;
     animation-duration: 5s;
-    position: absolute;
+    position: relative;
 }
 
 @keyframes upAndDowny {
     
-   0% {top: 80px;}
+   0% {top: 0px;}
     
     50% {
         top: 300px;
     }
 
-    100% {top: 80px;}
+    100% {top: 0px;}
 }
 
 #moveCircListener{
