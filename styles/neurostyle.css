@@ -51,7 +51,7 @@ h2{
 
 nav {
     display: flex;
-    justify-content: space-between;
+    
     width: 100%;
     background-color: #ff7043;
 }
@@ -71,16 +71,6 @@ nav a:hover{
 }
 
 
-.left {
-    display: flex;
-    justify-content: left;
-    
-}
-
-.right {
-    display: flex;
-    justify-content: right;
-}
 
 .sidebar{
     flex-direction: column;
@@ -142,6 +132,7 @@ nav a:hover{
     
     nav{
         order: -1;
+        justify-content: space-between;
     }
 
     .sidebar{
@@ -184,7 +175,15 @@ nav a:hover{
     top: 50%;
     left: 10%;
     
+}
+.left {
+    display: flex;
+    justify-content: left;
     
 }
-    
+
+.right {
+    display: flex;
+    justify-content: right;
+}
 }
